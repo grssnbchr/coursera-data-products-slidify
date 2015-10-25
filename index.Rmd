@@ -23,7 +23,7 @@ Timo Grossenbacher
 
 [@grssnbchr](http://twitter.com/grssnbchr)
 
-Presentation available under [grssnbchr.github.io/cddp](grssnbchr.github.io/cddp)
+Presentation available under [grssnbchr.github.io/coursera-data-products-slidify](grssnbchr.github.io/coursera-data-products-slidify)
 
 
 ---
