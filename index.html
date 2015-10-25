@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Coursera Developing Data Products</title>
+  <meta name="description" content="">
+  <meta name="author" content="Timo Grossenbacher">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/default.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/Bitter-Bold.ttf">
+<link rel="stylesheet" href = "assets/css/Bitter-Italic.ttf">
+<link rel="stylesheet" href = "assets/css/Bitter-Regular.ttf">
+<link rel="stylesheet" href = "assets/css/custom.css">
+<link rel="stylesheet" href = "assets/css/ribbons.css">
+<link rel="stylesheet" href = "assets/css/SRGSSRType_BdIt.ttf">
+<link rel="stylesheet" href = "assets/css/SRGSSRType_Bd.ttf">
+<link rel="stylesheet" href = "assets/css/SRGSSRType_He.ttf">
+<link rel="stylesheet" href = "assets/css/SRGSSRType_It.ttf">
+<link rel="stylesheet" href = "assets/css/SRGSSRType_Lt.ttf">
+<link rel="stylesheet" href = "assets/css/SRGSSRType_Md.ttf">
+<link rel="stylesheet" href = "assets/css/SRGSSRType_Rg.ttf">
+<link rel="stylesheet" href = "assets/css/SRGSSRType_Serif_Rg.ttf">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1' data-background=''>
+  <h3>Coursera Developing Data Products Course Project</h3>
+  <h2>An interactive, exploratory analysis of election results</h2>
+
+<p>Timo Grossenbacher</p>
+
+<p><a href="http://twitter.com/grssnbchr">@grssnbchr</a></p>
+
+<p>Presentation available under <a href="grssnbchr.github.io/cddp">grssnbchr.github.io/cddp</a></p>
+
+</section>
+
+<section class='' data-state='' id='slide-2' data-background=''>
+  <h3>About me</h3>
+  <p>Data journalist for <a href="http://srf.ch">SRF Data</a></p>
+
+</section>
+
+<section class='' data-state='' id='slide-3' data-background=''>
+  <h3>Swiss Federal Elections 2015</h3>
+  <p class='fragment'>Goal: We need a way to find out which parties are strongest in which regions (districts).</p>
+
+<p class='fragment'>Shiny is the way to go! </p>
+
+</section>
+
+<section class='' data-state='' id='slide-4' data-background=''>
+  <h3>Prototype:</h3>
+  <p><img src="assets/img/screen.png" width="600"></p>
+
+<p>The final application will have 1551 district-year combinations: 11 years, 141 districts.</p>
+
+</section>
+
+<section class='' data-state='' id='slide-5' data-background=''>
+  <h4>One last hint:</h4>
+  <h3>Automate EVERYTHING!</h3>
+
+<p><img src="assets/img/automate.gif" width="600"></p>
+
+<p><small>Source: giphy.com</small></p>
+
+<h3>...and make it reproducible.</h3>
+
+</section>
+
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'none', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
